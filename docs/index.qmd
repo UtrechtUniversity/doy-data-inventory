@@ -5,11 +5,9 @@ author: "Neha Moopen<br>Utrecht University Library"
 format: html
 ---
 
-Dynamics of Youth has the ambition to make all data within the strategic theme as FAIR as possible. To help with this, we are creating an inventory of all projects conducted within the UU and UMCU that examine topics related to child and youth development and (mental) health. While a DoY Data Catalog is still in the works, we wanted to already make the following information in a 'factsheet' style available to the community.
+Dynamics of Youth has the ambition to make all data within the strategic theme as FAIR as possible. To help with this, we are creating an inventory of all projects conducted within the UU and UMCU that examine topics related to child and youth development and (mental) health. 
 
-This is an initiative by Anne Margit Reitsema (Thriving & Healthy Youth Community), Eline de Groot (Early Childhood Community), and Neha Moopen (Research Data Management Support / DoY Office). If you have any questions, don't hesitate to reach out to us!
-
-Are you involved in such a project? Please help us by filling out this form! Qualtrics survey; [https://survey.uu.nl/jfe/form/SV_23nEYHwKB4i0p8i](https://survey.uu.nl/jfe/form/SV_23nEYHwKB4i0p8i)
+Are you involved in such a project? Please help us improve this overview by filling out this form! Qualtrics survey; [https://survey.uu.nl/jfe/form/SV_23nEYHwKB4i0p8i](https://survey.uu.nl/jfe/form/SV_23nEYHwKB4i0p8i)
 
 ```{r echo=FALSE, message=FALSE}
 library(readr)
