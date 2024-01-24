@@ -1,0 +1,127 @@
+---
+title: "Dynamics of Youth"
+subtitle: "Data Factsheets"
+author: "Neha Moopen<br>Utrecht University Library"
+format: html
+---
+
+Dynamics of Youth has the ambition to make all data within the strategic theme as FAIR as possible. To help with this, we are creating an inventory of all projects conducted within the UU and UMCU that examine topics related to child and youth development and (mental) health. While a DoY Data Catalog is still in the works, we wanted to already make the following information in a 'factsheet' style available to the community.
+
+This is an initiative by Anne Margit Reitsema (Thriving & Healthy Youth Community), Eline de Groot (Early Childhood Community), and Neha Moopen (Research Data Management Support / DoY Office). If you have any questions, don't hesitate to reach out to us!
+
+Are you involved in such a project? Please help us by filling out this form! Qualtrics survey; [https://survey.uu.nl/jfe/form/SV_23nEYHwKB4i0p8i](https://survey.uu.nl/jfe/form/SV_23nEYHwKB4i0p8i)
+
+```{r echo=FALSE, message=FALSE}
+library(readr)
+library(dplyr)
+library(reactable)
+library(htmltools)
+
+data <- read_csv2("../data/factsheet_data_2024-01-24.csv")
+
+data <- rename(data, 
+               "project_name" = `1 `,
+               "project_abbreviation" = `2 `,
+               "description" = `5 `,
+               "institution" = `3 _1`,
+               "author" = `4 _4`,
+               "design" = `9 `)
+
+data <- filter_at(data, vars("project_name", "project_abbreviation", "description", "institution", "author", "design"), ~!is.na(.))
+
+data <- select(data, "project_name", "project_abbreviation", "description", "institution", "author", "design")
+```
+
+```{r echo=FALSE}
+row_details <- function(index) {
+  project <- data[index, ]
+  
+  project_field <- function(name, ...) {
+    if (any(is.na(...))) NULL
+    else tagList(div(class = "detail-label", name), ...)
+  }
+  
+  detail <- div(
+    class = "project-detail",
+    div(class = "detail-header", project$project_name),
+    div(class = "detail-abbreviation", project$project_abbreviation),
+    project_field("Description", project$description),
+    project_field("Institution", project$institution),
+    project_field("Author", project$author),
+    project_field("Research Design", project$design)
+  )
+}
+  
+tbl <- reactable(
+  data[, c("project_name", "project_abbreviation")],
+  onClick = "expand",
+  details = row_details,
+  theme = reactableTheme(cellPadding = "8px 12px")
+)
+```
+
+```{r echo=FALSE}
+tags$link(href = "https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=fallback", rel = "stylesheet")
+```
+
+```{css echo=FALSE}
+.project-detail {
+  font-family: Nunito, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 24px;
+  box-shadow: inset 0 1px 3px #dbdbdb;
+  background: hsl(213, 20%, 99%);
+  border-radius: 4px;
+}
+
+.detail-label {
+  margin: 1.25rem 0 0.25rem;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.detail-header {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.detail-title {
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.detail-description {
+  font-size: 0.875rem;
+}
+
+.project-table {
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  border: 1px solid hsl(213, 33%, 93%);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: hsl(213, 45%, 97%);
+  border-bottom-color: hsl(213, 33%, 93%);
+  border-bottom-width: 1px;
+  color: hsl(213, 13%, 33%);
+}
+
+.header[aria-sort]:hover,
+.header[aria-sort]:focus {
+  color: hsl(213, 55%, 50%);
+}
+
+.row-style {
+  cursor: pointer;
+}
+```
+
+
+```{r echo=FALSE}
+tbl
+```
