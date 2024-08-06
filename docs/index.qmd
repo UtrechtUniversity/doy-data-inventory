@@ -1,12 +1,14 @@
 ---
 title: "Dynamics of Youth"
-subtitle: "Data Factsheets"
+subtitle: "DATA FACTSHEETS"
 author: "Neha Moopen<br>Utrecht University Library"
+date: last-modified
 title-block-banner: "#FFCD00"
 title-block-banner-color: black
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: [cosmo, ../styles/theme-light.scss]
 ---
 
 Dynamics of Youth has the ambition to make all data within the strategic theme as FAIR as possible. To help with this, we are creating an inventory of all projects conducted within the UU and UMCU that examine topics related to child and youth development and (mental) health. 
