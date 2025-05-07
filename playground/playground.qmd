@@ -1,0 +1,32 @@
+---
+title: PROactive Cohort Study
+format:
+  html:
+    theme: cosmo
+---
+
+```{r}
+library(readxl)
+library(simplermarkdown)
+library(knitr)
+proactive_metadata <- read_excel("../playground/playground.xlsx", sheet = 1)
+```
+
+```{r}
+#| output: asis
+cat(md_table(proactive_metadata))
+```
+
+```{r}
+#| output: asis
+kable(proactive_metadata)
+```
+
+```{r}
+#| output: asis
+
+subdat <- proactive_metadata[2:42, ]
+
+
+```
+

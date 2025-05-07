@@ -1,0 +1,62 @@
+---
+title: "PROactive Cohort Study"
+author: "Sanne Nijhof, Elise van de Putte, Anne Hoefnagels"
+date: "2025-05-06"
+categories: [umcu, wkz, child health, chronic disease, lifecycle paediatrics, biopsychosocial model]
+execute:
+  echo: false
+---
+
+```{r}
+#| output: false
+
+library(readxl)
+library(knitr)
+proactive_metadata <- read_excel("proactive-cohort-study.xlsx", sheet = "markdown")
+opts <- options(knitr.kable.NA = "")
+```
+
+## Citation Metadata
+
+```{r}
+#| output: asis
+
+citation_metadata <- proactive_metadata[2:35, ]
+kable(citation_metadata, col.names = NULL)
+```
+
+## Social Sciences & Humanities Metadata
+
+```{r}
+#| output: asis
+
+ssh_metadata <- proactive_metadata[37:47, ]
+kable(ssh_metadata, col.names = NULL)
+```
+
+## Life Sciences Metadata
+
+```{r}
+#| output: asis
+
+nes_metadata <- proactive_metadata[49:51, ]
+kable(nes_metadata, col.names = NULL)
+```
+
+## Dataset Terms
+
+```{r}
+#| output: asis
+
+terms_metadata <- proactive_metadata[58:64, ]
+kable(terms_metadata, col.names = NULL)
+```
+
+## Restricted Files + Terms of Access
+
+```{r}
+#| output: asis
+
+access_metadata <- proactive_metadata[66:68, ]
+kable(access_metadata, col.names = NULL)
+```

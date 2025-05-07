@@ -1,0 +1,35 @@
+---
+title: "SMART-Youth"
+author: "Isabelle van der Linden, Henk Schipper, Sanne Nijhof, Kors van der Ent"
+date: "2025-05-06"
+categories: [umcu, wkz, child health, chronic disease, cardiometabolic risk factors, atherosclerosis]
+execute:
+  echo: false
+---
+
+```{r}
+#| output: false
+
+library(readxl)
+library(knitr)
+smart_youth_metadata <- read_excel("smart-youth.xlsx")
+opts <- options(knitr.kable.NA = "")
+```
+
+## Citation Metadata
+
+```{r}
+#| output: asis
+
+citation_metadata <- smart_youth_metadata[2:30, ]
+kable(citation_metadata, col.names = NULL)
+```
+
+## Dataset Terms
+
+```{r}
+#| output: asis
+
+terms_metadata <- smart_youth_metadata[37:44, ]
+kable(terms_metadata, col.names = NULL)
+```

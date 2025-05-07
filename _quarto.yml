@@ -1,0 +1,19 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - "posts/"
+    
+website:
+  title: "DoY Data Directory"
+  navbar:
+    background: "#FFCD00"
+    search: true
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
