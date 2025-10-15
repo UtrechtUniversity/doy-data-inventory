@@ -2,8 +2,13 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/proactive-cohort-study/index.html",
-      "/posts/smart-youth/index.html"
+      "/posts/eyetracking-study/index.html",
+      "/posts/in-transition/index.html",
+      "/posts/bpd-young/index.html",
+      "/posts/primary/index.html",
+      "/posts/youth-climate/index.html",
+      "/posts/smart-youth/index.html",
+      "/posts/proactive-cohort-study/index.html"
     ]
   }
 ]

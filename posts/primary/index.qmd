@@ -1,0 +1,35 @@
+---
+title: "PRIMARY"
+author: "Christel Hessels, Odilia Laucelle, Marcel van Aken, Anouk Aleva, Tessa van den Berg, Isa Swinkels"
+date: "2025-06-23"
+categories: [FSW, youth, self-harm, intervention, experience sampling method, psychopathology, randomized controlled trial]
+execute:
+  echo: false
+---
+
+```{r}
+#| output: false
+
+library(readxl)
+library(knitr)
+primary_metadata <- read_excel("primary.xlsx")
+opts <- options(knitr.kable.NA = "")
+```
+
+## Citation Metadata
+
+```{r}
+#| output: asis
+
+citation_metadata <- primary_metadata[2:31, ]
+kable(citation_metadata, col.names = NULL)
+```
+
+## Social Sciences & Humanities Metadata
+
+```{r}
+#| output: asis
+
+ssh_metadata <- primary_metadata[33:39, ]
+kable(ssh_metadata, col.names = NULL)
+```

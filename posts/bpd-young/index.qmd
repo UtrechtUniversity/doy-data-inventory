@@ -1,0 +1,35 @@
+---
+title: "BPD YOUNG"
+author: "Christel Hessels, Odilia Laucelle, Marcel van Aken, Anouk Aleva"
+date: "2025-06-23"
+categories: [FSW, GGZ, youth, mental health, psychopathology, psychosocial functioning, longitudinal]
+execute:
+  echo: false
+---
+
+```{r}
+#| output: false
+
+library(readxl)
+library(knitr)
+bpd_young_metadata <- read_excel("bpd-young.xlsx")
+opts <- options(knitr.kable.NA = "")
+```
+
+## Citation Metadata
+
+```{r}
+#| output: asis
+
+citation_metadata <- bpd_young_metadata[2:25, ]
+kable(citation_metadata, col.names = NULL)
+```
+
+## Social Sciences & Humanities Metadata
+
+```{r}
+#| output: asis
+
+ssh_metadata <- bpd_young_metadata[27:33, ]
+kable(ssh_metadata, col.names = NULL)
+```

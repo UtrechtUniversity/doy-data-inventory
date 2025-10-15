@@ -1,8 +1,8 @@
 ---
 title: "PROactive Cohort Study"
 author: "Sanne Nijhof, Elise van de Putte, Anne Hoefnagels"
-date: "2025-05-06"
-categories: [umcu, wkz, child health, chronic disease, lifecycle paediatrics, biopsychosocial model]
+date: "2021-05-07"
+categories: [WKZ, child health, chronic disease, lifecycle paediatrics, biopsychosocial model]
 execute:
   echo: false
 ---

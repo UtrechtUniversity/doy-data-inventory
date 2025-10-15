@@ -1,0 +1,39 @@
+---
+title: "Reading & Answering Processes of Secondary School Students for Poetry & Prose"
+author: "Corina Breukink, Huub van den Bergh, Ewout van der Knaap"
+date: "2025-09-26"
+categories: [GW, eye tracking, reading processes, reading comprehension, secondary school students]
+execute:
+  echo: false
+---
+
+```{r}
+#| output: false
+
+library(readxl)
+library(knitr)
+eyetracking_metadata <- read_excel("eyetracking-study.xlsx")
+opts <- options(knitr.kable.NA = "")
+```
+
+::: {.callout-warning}
+This page is under construction!
+:::
+
+## Citation Metadata
+
+```{r}
+#| output: asis
+
+citation_metadata <- eyetracking_metadata[2:24, ]
+kable(citation_metadata, col.names = NULL)
+```
+
+## Social Sciences & Humanities Metadata
+
+```{r}
+#| output: asis
+
+ssh_metadata <- eyetracking_metadata[26:36, ]
+kable(ssh_metadata, col.names = NULL)
+```

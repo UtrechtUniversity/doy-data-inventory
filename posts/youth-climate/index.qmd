@@ -1,0 +1,35 @@
+---
+title: "Youth CLIMATE"
+author: "Anouk Smeeks, Andrik Becht, Cansel Karakas Ozden"
+date: "2025-06-19"
+categories: [FSW, climate emotions, eco-anxiety, youth, pro-environmental behaviors]
+execute:
+  echo: false
+---
+
+```{r}
+#| output: false
+
+library(readxl)
+library(knitr)
+youth_climate_metadata <- read_excel("youth-climate.xlsx")
+opts <- options(knitr.kable.NA = "")
+```
+
+## Citation Metadata
+
+```{r}
+#| output: asis
+
+citation_metadata <- youth_climate_metadata[2:24, ]
+kable(citation_metadata, col.names = NULL)
+```
+
+## Social Sciences & Humanities Metadata
+
+```{r}
+#| output: asis
+
+ssh_metadata <- youth_climate_metadata[26:32, ]
+kable(ssh_metadata, col.names = NULL)
+```

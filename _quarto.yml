@@ -6,7 +6,7 @@ project:
     - "posts/"
     
 website:
-  title: "DoY Data Directory"
+  title: "DoY Data Inventory"
   navbar:
     background: "#FFCD00"
     search: true

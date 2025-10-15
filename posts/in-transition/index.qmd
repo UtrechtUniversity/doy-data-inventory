@@ -1,0 +1,66 @@
+---
+title: "In Transition"
+author: "Susan Branje, Esther Bernasco, Annabelle Christiaens, Jingyun Wang, Monika Donker, Stefanos Mastrotheodoros, Lisanne de Moor"
+date: "2025-09-09"
+categories: [FSW, transition, identity, longitudinal, adolescents, school]
+execute:
+  echo: false
+---
+
+```{r}
+#| output: false
+
+library(readxl)
+library(knitr)
+intransition_metadata <- read_excel("in-transition.xlsx", sheet = "original")
+opts <- options(knitr.kable.NA = "")
+```
+
+::: {.callout-warning}
+This page is under construction!
+:::
+
+## Citation Metadata
+
+```{r}
+#| output: asis
+
+citation_metadata <- intransition_metadata[2:38, ]
+kable(citation_metadata, col.names = NULL)
+```
+
+## Social Sciences & Humanities Metadata
+
+```{r}
+#| output: asis
+
+ssh_metadata <- intransition_metadata[40:49, ]
+kable(ssh_metadata, col.names = NULL)
+```
+
+## Life Sciences Metadata
+
+```{r}
+#| output: asis
+
+nes_metadata <- intransition_metadata[51:53, ]
+kable(nes_metadata, col.names = NULL)
+```
+
+## Dataset Terms
+
+```{r}
+#| output: asis
+
+terms_metadata <- intransition_metadata[55:61, ]
+kable(terms_metadata, col.names = NULL)
+```
+
+## Restricted Files + Terms of Access
+
+```{r}
+#| output: asis
+
+access_metadata <- intransition_metadata[63:65, ]
+kable(access_metadata, col.names = NULL)
+```

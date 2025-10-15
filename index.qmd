@@ -2,9 +2,10 @@
 title: ""
 listing:
   contents: posts
+  date-format: iso
   sort: "date desc"
   type: table
-  categories: true
+  categories: cloud
   sort-ui: false
   filter-ui: false
 page-layout: full
