@@ -1,0 +1,35 @@
+---
+title: "PrenaTaal"
+author: "Eline de Groot, Rachida Ganga, Maria Luisa Tataranno, Frank Wijnen, Aoju Chen"
+date: "2025-05-06"
+categories: [WKZ, GW, language development, gestational diabetes, EEG, rapid auditory processing, lateralization]
+execute:
+  echo: false
+---
+
+```{r}
+#| output: false
+
+library(readxl)
+library(knitr)
+prenataal_metadata <- read_excel("prenataal.xlsx")
+opts <- options(knitr.kable.NA = "")
+```
+
+## Citation Metadata
+
+```{r}
+#| output: asis
+
+citation_metadata <- prenataal_metadata[2:23, ]
+kable(citation_metadata, col.names = NULL)
+```
+
+## Social Sciences & Humanities Metadata
+
+```{r}
+#| output: asis
+
+terms_metadata <- prenataal_metadata[25:33, ]
+kable(terms_metadata, col.names = NULL)
+```

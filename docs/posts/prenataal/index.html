@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Eline de Groot, Rachida Ganga, Maria Luisa Tataranno, Frank Wijnen, Aoju Chen">
+<meta name="dcterms.date" content="2025-05-06">
 
-<title>DoY Data Inventory</title>
+<title>PrenaTaal – DoY Data Inventory</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-38903eb8cfb64320fc66a7c3cfca645f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-38903eb8cfb64320fc66a7c3cfca645f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +68,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DoY Data Inventory</span>
     </a>
   </div>
@@ -149,132 +91,200 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">PrenaTaal</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">WKZ</div>
+                <div class="quarto-category">GW</div>
+                <div class="quarto-category">language development</div>
+                <div class="quarto-category">gestational diabetes</div>
+                <div class="quarto-category">EEG</div>
+                <div class="quarto-category">rapid auditory processing</div>
+                <div class="quarto-category">lateralization</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Eline de Groot, Rachida Ganga, Maria Luisa Tataranno, Frank Wijnen, Aoju Chen </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 6, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-cloud"><div class="category" data-category="RUVH"><span class="quarto-category-count category-cloud-2">EEG</span></div><div class="category" data-category="RlNX"><span class="quarto-category-count category-cloud-5">FSW</span></div><div class="category" data-category="R0da"><span class="quarto-category-count category-cloud-2">GGZ</span></div><div class="category" data-category="R1c="><span class="quarto-category-count category-cloud-3">GW</span></div><div class="category" data-category="V0ta"><span class="quarto-category-count category-cloud-4">WKZ</span></div><div class="category" data-category="YWRvbGVzY2VudHM="><span class="quarto-category-count category-cloud-2">adolescents</span></div><div class="category" data-category="YXRoZXJvc2NsZXJvc2lz"><span class="quarto-category-count category-cloud-2">atherosclerosis</span></div><div class="category" data-category="YmlvcHN5Y2hvc29jaWFsJTIwbW9kZWw="><span class="quarto-category-count category-cloud-2">biopsychosocial model</span></div><div class="category" data-category="Y2FyZGlvbWV0YWJvbGljJTIwcmlzayUyMGZhY3RvcnM="><span class="quarto-category-count category-cloud-2">cardiometabolic risk factors</span></div><div class="category" data-category="Y2hpbGQlMjBoZWFsdGg="><span class="quarto-category-count category-cloud-3">child health</span></div><div class="category" data-category="Y2hyb25pYyUyMGRpc2Vhc2U="><span class="quarto-category-count category-cloud-3">chronic disease</span></div><div class="category" data-category="Y2xpbWF0ZSUyMGVtb3Rpb25z"><span class="quarto-category-count category-cloud-2">climate emotions</span></div><div class="category" data-category="ZWNvLWFueGlldHk="><span class="quarto-category-count category-cloud-2">eco-anxiety</span></div><div class="category" data-category="ZXhwZXJpZW5jZSUyMHNhbXBsaW5nJTIwbWV0aG9k"><span class="quarto-category-count category-cloud-2">experience sampling method</span></div><div class="category" data-category="ZXllJTIwdHJhY2tpbmc="><span class="quarto-category-count category-cloud-2">eye tracking</span></div><div class="category" data-category="Z2VzdGF0aW9uYWwlMjBkaWFiZXRlcw=="><span class="quarto-category-count category-cloud-2">gestational diabetes</span></div><div class="category" data-category="aWRlbnRpdHk="><span class="quarto-category-count category-cloud-2">identity</span></div><div class="category" data-category="aW50ZXJ2ZW50aW9u"><span class="quarto-category-count category-cloud-2">intervention</span></div><div class="category" data-category="bGFuZ3VhZ2UlMjBkZXZlbG9wbWVudA=="><span class="quarto-category-count category-cloud-2">language development</span></div><div class="category" data-category="bGF0ZXJhbGl6YXRpb24="><span class="quarto-category-count category-cloud-2">lateralization</span></div><div class="category" data-category="bGlmZWN5Y2xlJTIwcGFlZGlhdHJpY3M="><span class="quarto-category-count category-cloud-2">lifecycle paediatrics</span></div><div class="category" data-category="bG9uZ2l0dWRpbmFs"><span class="quarto-category-count category-cloud-3">longitudinal</span></div><div class="category" data-category="bWVudGFsJTIwaGVhbHRo"><span class="quarto-category-count category-cloud-2">mental health</span></div><div class="category" data-category="cHJvLWVudmlyb25tZW50YWwlMjBiZWhhdmlvcnM="><span class="quarto-category-count category-cloud-2">pro-environmental behaviors</span></div><div class="category" data-category="cHN5Y2hvcGF0aG9sb2d5"><span class="quarto-category-count category-cloud-3">psychopathology</span></div><div class="category" data-category="cHN5Y2hvc29jaWFsJTIwZnVuY3Rpb25pbmc="><span class="quarto-category-count category-cloud-2">psychosocial functioning</span></div><div class="category" data-category="cmFuZG9taXplZCUyMGNvbnRyb2xsZWQlMjB0cmlhbA=="><span class="quarto-category-count category-cloud-2">randomized controlled trial</span></div><div class="category" data-category="cmFwaWQlMjBhdWRpdG9yeSUyMHByb2Nlc3Npbmc="><span class="quarto-category-count category-cloud-2">rapid auditory processing</span></div><div class="category" data-category="cmVhZGluZyUyMGNvbXByZWhlbnNpb24="><span class="quarto-category-count category-cloud-2">reading comprehension</span></div><div class="category" data-category="cmVhZGluZyUyMHByb2Nlc3Nlcw=="><span class="quarto-category-count category-cloud-2">reading processes</span></div><div class="category" data-category="c2Nob29s"><span class="quarto-category-count category-cloud-2">school</span></div><div class="category" data-category="c2Vjb25kYXJ5JTIwc2Nob29sJTIwc3R1ZGVudHM="><span class="quarto-category-count category-cloud-2">secondary school students</span></div><div class="category" data-category="c2VsZi1oYXJt"><span class="quarto-category-count category-cloud-2">self-harm</span></div><div class="category" data-category="dHJhbnNpdGlvbg=="><span class="quarto-category-count category-cloud-2">transition</span></div><div class="category" data-category="eW91dGg="><span class="quarto-category-count category-cloud-4">youth</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-<th>
-Author
-</th>
+<section id="citation-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="citation-metadata">Citation Metadata</h2>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Title</strong></td>
+<td style="text-align: left;">PrenaTaal</td>
 </tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="R1clMkNleWUlMjB0cmFja2luZyUyQ3JlYWRpbmclMjBwcm9jZXNzZXMlMkNyZWFkaW5nJTIwY29tcHJlaGVuc2lvbiUyQ3NlY29uZGFyeSUyMHNjaG9vbCUyMHN0dWRlbnRz" data-listing-date-sort="1758837600000" data-listing-file-modified-sort="1760521130033" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35" data-listing-title-sort="Reading &amp; Answering Processes of Secondary School Students for Poetry &amp; Prose" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">2025-09-26</span>
-</td>
-<td>
-<a href="./posts/eyetracking-study/index.html" class="title listing-title">Reading &amp; Answering Processes of Secondary School Students for Poetry &amp; Prose</a>
-</td>
-<td>
-<span class="listing-author">Corina Breukink, Huub van den Bergh, Ewout van der Knaap</span>
-</td>
+<tr class="even">
+<td style="text-align: left;"><strong>Subtitle</strong></td>
+<td style="text-align: left;">The interplay between prenatal speech input and brain maturation in early language development.</td>
 </tr>
-<tr data-index="1" data-categories="RlNXJTJDdHJhbnNpdGlvbiUyQ2lkZW50aXR5JTJDbG9uZ2l0dWRpbmFsJTJDYWRvbGVzY2VudHMlMkNzY2hvb2w=" data-listing-date-sort="1757368800000" data-listing-file-modified-sort="1760521140739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73" data-listing-title-sort="In Transition" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">2025-09-09</span>
-</td>
-<td>
-<a href="./posts/in-transition/index.html" class="title listing-title">In Transition</a>
-</td>
-<td>
-<span class="listing-author">Susan Branje, Esther Bernasco, Annabelle Christiaens, Jingyun Wang, Monika Donker, Stefanos Mastrotheodoros, Lisanne de Moor</span>
-</td>
+<tr class="odd">
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">de Groot, Eline (Utrecht University) - <a href="https://orcid.org/0000-0001-8182-552X">ORCID</a></td>
 </tr>
-<tr data-index="2" data-categories="RlNXJTJDR0daJTJDeW91dGglMkNtZW50YWwlMjBoZWFsdGglMkNwc3ljaG9wYXRob2xvZ3klMkNwc3ljaG9zb2NpYWwlMjBmdW5jdGlvbmluZyUyQ2xvbmdpdHVkaW5hbA==" data-listing-date-sort="1750629600000" data-listing-file-modified-sort="1760521118583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="BPD YOUNG" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">2025-06-23</span>
-</td>
-<td>
-<a href="./posts/bpd-young/index.html" class="title listing-title">BPD YOUNG</a>
-</td>
-<td>
-<span class="listing-author">Christel Hessels, Odilia Laucelle, Marcel van Aken, Anouk Aleva</span>
-</td>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Ganga, Rachida (Utrecht University) - <a href="https://orcid.org/0000-0003-2603-0972">ORCID</a></td>
 </tr>
-<tr data-index="3" data-categories="RlNXJTJDeW91dGglMkNzZWxmLWhhcm0lMkNpbnRlcnZlbnRpb24lMkNleHBlcmllbmNlJTIwc2FtcGxpbmclMjBtZXRob2QlMkNwc3ljaG9wYXRob2xvZ3klMkNyYW5kb21pemVkJTIwY29udHJvbGxlZCUyMHRyaWFs" data-listing-date-sort="1750629600000" data-listing-file-modified-sort="1760521151663" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="PRIMARY" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">2025-06-23</span>
-</td>
-<td>
-<a href="./posts/primary/index.html" class="title listing-title">PRIMARY</a>
-</td>
-<td>
-<span class="listing-author">Christel Hessels, Odilia Laucelle, Marcel van Aken, Anouk Aleva, Tessa van den Berg, Isa Swinkels</span>
-</td>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Tataranno, Maria Luisa (University Medical Center Groningen) - <a href="https://orcid.org/0000-0002-8304-5399">ORCID</a></td>
 </tr>
-<tr data-index="4" data-categories="RlNXJTJDY2xpbWF0ZSUyMGVtb3Rpb25zJTJDZWNvLWFueGlldHklMkN5b3V0aCUyQ3Byby1lbnZpcm9ubWVudGFsJTIwYmVoYXZpb3Jz" data-listing-date-sort="1750284000000" data-listing-file-modified-sort="1760521178254" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Youth CLIMATE" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">2025-06-19</span>
-</td>
-<td>
-<a href="./posts/youth-climate/index.html" class="title listing-title">Youth CLIMATE</a>
-</td>
-<td>
-<span class="listing-author">Anouk Smeeks, Andrik Becht, Cansel Karakas Ozden</span>
-</td>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Wijnen, Frank (Utrecht University) - <a href="https://orcid.org/0000-0002-7196-6000">ORCID</a></td>
 </tr>
-<tr data-index="5" data-categories="V0taJTJDR1clMkNsYW5ndWFnZSUyMGRldmVsb3BtZW50JTJDZ2VzdGF0aW9uYWwlMjBkaWFiZXRlcyUyQ0VFRyUyQ3JhcGlkJTIwYXVkaXRvcnklMjBwcm9jZXNzaW5nJTJDbGF0ZXJhbGl6YXRpb24=" data-listing-date-sort="1746482400000" data-listing-file-modified-sort="1761576889777" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="PrenaTaal" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">2025-05-06</span>
-</td>
-<td>
-<a href="./posts/prenataal/index.html" class="title listing-title">PrenaTaal</a>
-</td>
-<td>
-<span class="listing-author">Eline de Groot, Rachida Ganga, Maria Luisa Tataranno, Frank Wijnen, Aoju Chen</span>
-</td>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Chen, Aoju (Utrecht University) - <a href="https://orcid.org/0000-0002-6745-9794">ORCID</a></td>
 </tr>
-<tr data-index="6" data-categories="V0taJTJDY2hpbGQlMjBoZWFsdGglMkNjaHJvbmljJTIwZGlzZWFzZSUyQ2NhcmRpb21ldGFib2xpYyUyMHJpc2slMjBmYWN0b3JzJTJDYXRoZXJvc2NsZXJvc2lz" data-listing-date-sort="1731020400000" data-listing-file-modified-sort="1760521168092" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27" data-listing-title-sort="SMART-Youth" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">2024-11-08</span>
-</td>
-<td>
-<a href="./posts/smart-youth/index.html" class="title listing-title">SMART-Youth</a>
-</td>
-<td>
-<span class="listing-author">Isabelle van der Linden, Henk Schipper, Sanne Nijhof, Kors van der Ent</span>
-</td>
+<tr class="even">
+<td style="text-align: left;"><strong>Point of Contact</strong></td>
+<td style="text-align: left;"><a href="e.r.degroot@uu.nl">Eline de Groot</a> (Utrecht University)</td>
 </tr>
-<tr data-index="7" data-categories="V0taJTJDY2hpbGQlMjBoZWFsdGglMkNjaHJvbmljJTIwZGlzZWFzZSUyQ2xpZmVjeWNsZSUyMHBhZWRpYXRyaWNzJTJDYmlvcHN5Y2hvc29jaWFsJTIwbW9kZWw=" data-listing-date-sort="1620338400000" data-listing-file-modified-sort="1760521159594" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="68" data-listing-title-sort="PROactive Cohort Study" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">2021-05-07</span>
-</td>
-<td>
-<a href="./posts/proactive-cohort-study/index.html" class="title listing-title">PROactive Cohort Study</a>
-</td>
-<td>
-<span class="listing-author">Sanne Nijhof, Elise van de Putte, Anne Hoefnagels</span>
-</td>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="aoju.chen@uu.nl">Aoju Chen</a> (Utrecht University)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: left;">to be added</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Subject</strong></td>
+<td style="text-align: left;">Arts and Humanities; Medicine, Health and Life Sciences; Social Sciences</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Keyword</strong></td>
+<td style="text-align: left;">language development</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">gestational diabetes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">EEG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">rapid auditory processing</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">lateralization</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Language</strong></td>
+<td style="text-align: left;">Dutch; English</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Production Location</strong></td>
+<td style="text-align: left;">Utrecht, Netherlands</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Funding Information</strong></td>
+<td style="text-align: left;">NWO</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Deposit Date</strong></td>
+<td style="text-align: left;">2025-07-31</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Date of Collection</strong></td>
+<td style="text-align: left;"><em>Start Date</em>: 2023-12-01; <em>End Date</em>: 2025-07-01</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Data Type</strong></td>
+<td style="text-align: left;">EEG; questionnaire; EPD</td>
 </tr>
 </tbody>
 </table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</section>
+<section id="social-sciences-humanities-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="social-sciences-humanities-metadata">Social Sciences &amp; Humanities Metadata</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 84%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SOCIAL SCIENCES &amp; HUMANITIES METADATA</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Unit of Analysis</strong></td>
+<td style="text-align: left;">Individuals; Newborns &amp; Mothers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Universe</strong></td>
+<td style="text-align: left;">Term-born newborns (within 5 days of birth) born at the WKZ and their mothers.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Time Method</strong></td>
+<td style="text-align: left;">cross-sectional</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Frequency</strong></td>
+<td style="text-align: left;">once</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sampling Procedure</strong></td>
+<td style="text-align: left;">GDM group: mothers are screened when they come to the outpatient clinic for diabetes instructions and are invited to join the study.Control Group: once they’re in the hospital for delivering the baby, they are invited to join the study either before or after the delivery.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Collection Mode</strong></td>
+<td style="text-align: left;">EEG, questionnaires, EPD</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Type of Research Instrument</strong></td>
+<td style="text-align: left;">structured</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Characteristics of Data Collection Situation</strong></td>
+<td style="text-align: left;">EEGs are conducted at the hospital or at home, with the parent present. The questionnaires are sent digitally and completed independently.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
