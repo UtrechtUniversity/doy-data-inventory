@@ -30,6 +30,6 @@ kable(citation_metadata, col.names = NULL)
 ```{r}
 #| output: asis
 
-terms_metadata <- prenataal_metadata[25:33, ]
+terms_metadata <- prenataal_metadata[26:34, ]
 kable(terms_metadata, col.names = NULL)
 ```

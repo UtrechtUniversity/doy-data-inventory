@@ -25,7 +25,7 @@ This page is under construction!
 ```{r}
 #| output: asis
 
-citation_metadata <- eyetracking_metadata[2:24, ]
+citation_metadata <- eyetracking_metadata[2:23, ]
 kable(citation_metadata, col.names = NULL)
 ```
 
@@ -34,6 +34,6 @@ kable(citation_metadata, col.names = NULL)
 ```{r}
 #| output: asis
 
-ssh_metadata <- eyetracking_metadata[26:36, ]
+ssh_metadata <- eyetracking_metadata[25:35, ]
 kable(ssh_metadata, col.names = NULL)
 ```

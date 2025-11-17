@@ -33,3 +33,12 @@ kable(citation_metadata, col.names = NULL)
 ssh_metadata <- youth_climate_metadata[26:32, ]
 kable(ssh_metadata, col.names = NULL)
 ```
+
+## Overview of Measurements
+
+```{r}
+#| output: asis
+
+measurement_metadata <- youth_climate_metadata[34:53, ]
+kable(measurement_metadata, col.names = NULL)
+```

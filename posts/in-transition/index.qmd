@@ -25,7 +25,7 @@ This page is under construction!
 ```{r}
 #| output: asis
 
-citation_metadata <- intransition_metadata[2:38, ]
+citation_metadata <- intransition_metadata[2:32, ]
 kable(citation_metadata, col.names = NULL)
 ```
 
@@ -34,7 +34,7 @@ kable(citation_metadata, col.names = NULL)
 ```{r}
 #| output: asis
 
-ssh_metadata <- intransition_metadata[40:49, ]
+ssh_metadata <- intransition_metadata[34:43, ]
 kable(ssh_metadata, col.names = NULL)
 ```
 
@@ -43,7 +43,7 @@ kable(ssh_metadata, col.names = NULL)
 ```{r}
 #| output: asis
 
-nes_metadata <- intransition_metadata[51:53, ]
+nes_metadata <- intransition_metadata[45:47, ]
 kable(nes_metadata, col.names = NULL)
 ```
 
@@ -52,7 +52,7 @@ kable(nes_metadata, col.names = NULL)
 ```{r}
 #| output: asis
 
-terms_metadata <- intransition_metadata[55:61, ]
+terms_metadata <- intransition_metadata[49:55, ]
 kable(terms_metadata, col.names = NULL)
 ```
 
@@ -61,6 +61,6 @@ kable(terms_metadata, col.names = NULL)
 ```{r}
 #| output: asis
 
-access_metadata <- intransition_metadata[63:65, ]
+access_metadata <- intransition_metadata[57:59, ]
 kable(access_metadata, col.names = NULL)
 ```
