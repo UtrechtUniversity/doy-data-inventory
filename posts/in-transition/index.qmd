@@ -38,14 +38,6 @@ ssh_metadata <- intransition_metadata[34:43, ]
 kable(ssh_metadata, col.names = NULL)
 ```
 
-## Life Sciences Metadata
-
-```{r}
-#| output: asis
-
-nes_metadata <- intransition_metadata[45:47, ]
-kable(nes_metadata, col.names = NULL)
-```
 
 ## Dataset Terms
 

@@ -21,7 +21,7 @@ opts <- options(knitr.kable.NA = "")
 ```{r}
 #| output: asis
 
-citation_metadata <- youth_climate_metadata[2:24, ]
+citation_metadata <- youth_climate_metadata[2:25, ]
 kable(citation_metadata, col.names = NULL)
 ```
 
@@ -30,7 +30,7 @@ kable(citation_metadata, col.names = NULL)
 ```{r}
 #| output: asis
 
-ssh_metadata <- youth_climate_metadata[26:32, ]
+ssh_metadata <- youth_climate_metadata[27:33, ]
 kable(ssh_metadata, col.names = NULL)
 ```
 
@@ -39,6 +39,6 @@ kable(ssh_metadata, col.names = NULL)
 ```{r}
 #| output: asis
 
-measurement_metadata <- youth_climate_metadata[34:53, ]
+measurement_metadata <- youth_climate_metadata[35:54, ]
 kable(measurement_metadata, col.names = NULL)
 ```
