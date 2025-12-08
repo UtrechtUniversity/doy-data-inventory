@@ -161,3 +161,7 @@ GitHub Pages will automatically redeploy the website.
 ## Reference
 
 For more information on Quarto Websites & Blogs, please refer to the extensive documentation: https://quarto.org/docs/websites/ & https://quarto.org/docs/websites/website-blog.html
+
+## Contributors
+
+Neha Moopen
